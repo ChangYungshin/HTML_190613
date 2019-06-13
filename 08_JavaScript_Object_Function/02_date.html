@@ -19,24 +19,33 @@
 
     <script>
         // 宣告一個時間物件
-
+        var day = new Date();
+        console.log
         // 取得年份
-
+        console.log(d.getfullYear());
         // 取得月份 (請注意這裡)
-
+        console.log(d.getlMonth());//new 出來都是現在時間＝當下時間
         // 取得日期
 
         // 取得星期 (請注意這裡)
-
+        console.log(d.getDay());
         // 取得時間
-
+        console.log(d.getTime());
         // 取得分鐘
-
+        console.log(d.getMinute());
         // 若日期物件生成後，我們需要加一天
 
-        // 若日期物件生成後，我們需要加一個月
+        // 若日期物件生成後，我們需要現在的日期加一個月
+        d.setMonth(d.getMonth()+1);
+        console.log(d.getMonth());
+
+        d.setDate(1);//設定成那個月的1號
 
         // 試試看，如何透過日期的加減，取得這個月的最後一天?
+        d.setDate(d.getDate()-1);
+        console.log(d);
+        
+        //first 去w3C, 找methods ,尋找關鍵字試試看可行的方法利用網站上的example去試
 
         // 宣告兩個日期物件，並指定日期
 

@@ -12,10 +12,14 @@
     <button onclick="changeMsg()">Click Me!</button>
 
     <script>
-        // 1. 透過console.log先確認事件是否有綁定成功
-
-        // 2. 用ID取得網頁上面的元素
-
+        function changeMsg() {
+            // 1. 透過console.log先確認事件是否有綁定成功
+            console.log("OK");
+            // 2. 用ID取得網頁上面的元素
+            // document.getElementById("demo").textContent = "123";
+            var temp = document.getElementById("demo");
+            //textContent 和 innerText 功能相同 （find out the different）
+        }
         // 3. 修改元素的網頁內容
 
     </script>

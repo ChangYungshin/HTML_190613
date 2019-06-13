@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>FlowControl</title>
@@ -8,13 +9,51 @@
 <body>
     <p><a href="https://www.w3schools.com/Js/js_loop_while.asp" target="_blank">while</a></p>
     <pre>
-        while (condition) {
-          // code block to be executed
+        while (pass ==1234) {
+            console.log("OK"); // code block to be executed
         }
     </pre>
     <script>
-        // 網頁必須輸入通關密碼1234才會停止
 
-        // 判斷目前的數值是從1加到?
+        var flag = true;
+        while (flag) {
+            var pass = prompt("請輸入通關密碼");
+        if (pass == 1234) {
+            flag = false;
+        }
+        // code block to be executed
+        }
+        // 網頁必須輸入通關密碼1234才會停止
+         // 判斷目前的數值是從1加到?
+         var total = 6;
+         var count = 1;
+         var str = "";
+         while(i<total){
+             total = total - count;
+             count = count+1;
+             //str = str+count+"+"=""+"1"+"+" = "1+";//紀錄結果的過程
+
+            //tot = 6-1=5
+            //  cnt=2
+            //str="1+"
+
+            //  tot=5-2=3
+            //  cnt=3
+            //str=str+"2+"
+
+            //  tot=3-3 =0
+            //  cnt=4
+
+
+            //  tot=0-4=-4
+            //  cnt = 5
+            consele.log(str.substr(0,str.length-1)+"=6");
+             console.log("1加到"+(count-1)+"的結果");
+         }
+
+
+       
     </script>
-</body></html>
+</body>
+
+</html>

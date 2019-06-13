@@ -28,6 +28,7 @@
 
         // 5. 至瀏覽器觀察，log的紀錄是什麼?
 
+
         // 6. 如果需要取用到外層的x，需要一點關鍵字 ==> window
     </script>
 
@@ -45,14 +46,15 @@
         // var 與 ES6 let const 差異：https://ithelp.ithome.com.tw/articles/10209121
         // [筆記] JavaScript ES6 中的模版字符串（template literals）和標籤模版（tagged template）：https://pjchender.blogspot.com/2017/01/javascript-es6-template-literalstagged.html
 
-        // if (true) {
-        //     var testVar = "a"
-        //     let testLet = "b";
-        //     const testConst = "c";
-        // }
-        // console.log(`testVar: ${testVar}`);
-        // console.log(`testLet: ${testLet}`);
-        // console.log(`testConst: ${testConst}`);
+        if (true) {
+            var testVar = "a"
+            let testLet = "b";
+            const testConst = "c";
+        }
+        console.log("testVar"+testVar);
+        console.log(`testVar: ${testVar}`);
+        console.log(`testLet: ${testLet}`);
+        console.log(`testConst: ${testConst}`);
     </script>
 </body>
 
