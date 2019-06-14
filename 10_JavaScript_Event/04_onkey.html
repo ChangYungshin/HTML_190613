@@ -7,8 +7,28 @@
 </head>
 
 <body>
+    <h2>測試綁定<i>onkeypress</i>事件</h2>
+    <input type="text" on keypress="testKeypress(event)">
+    <p>這裡會顯示KeyCode: <span id="keyPress1"></span></p>
+    <p>這裡會顯示charCode:<span id="keyPress2"></span></p>
+    <hr>
+    <h2>測試綁定<i>onkeydown</i>事件</h2>
+    <input type="text" onkeydown="testKeyDown(event)">
+    <p>這裡會顯示KeyCode: <span id="keyDown1"></span></p>
+    <p>這裡會顯示charCode: <span id="keyDown2"></span></p>
     <!-- 輸出畫面請參考圖片 -->
     <!-- 會需要的關鍵字：onkeypress 事件、onkeydown事件、event.keyCode、event.charCode -->
+
+    <script>
+        function testKeypress(obj){
+            document.getElementById("keyPress1").innerHTML = obj.keyCode;
+            document.getElementById("keyPress2").innerHTML = obj.keyCode;
+        }
+        function testKeypress(obj){
+            document.getElementById("keyDown1").innerHTML = obj.keyCode;
+            document.getElementById("keyDown2").innerHTML = obj.charCode;
+        }
+    </script>
 
 </body>
 </html>
